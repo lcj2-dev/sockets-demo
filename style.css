@@ -1,0 +1,46 @@
+:root {
+  --color-primary: rgb(249, 115, 22);
+  --color-dark: rgb(17, 24, 39);
+  --color-light: rgb(248, 250, 252);
+  --radius-default: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content {
+  height: 100vh;
+  padding: 30px;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.content input {
+  border: none;
+  padding: 10px;
+  border-radius: var(--radius-default);
+  margin: 30px 0;
+  display: block;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-default);
+  color: var(--color-light);
+  padding: 10px 30px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+}
