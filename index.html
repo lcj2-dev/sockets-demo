@@ -5,15 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>NDA</title>
+    <title>Sockets Demo</title>
   </head>
   <body>
     <main class="content">
-      <h1 id="appName">Nameless Demo App</h1>
+      <div class="container">
+        <div class="box socket-control" data-route="messages">
+          <h2>Message Socket</h2>
+          <textarea class="textarea" rows="10" placeholder="Logs"></textarea>
+          <input class="input" type="text" placeholder="Message" />
+          <div class="box-buttons">
+            <button class="btn">Connect</button>
+            <button class="btn">Send</button>
+          </div>
+        </div>
 
-      <input type="text" id="nameInput" placeholder="App name" />
-
-      <button class="btn" id="dataBtn">Start sending data</button>
+        <div class="box socket-control" data-route="numbers">
+          <h2>Numbers Socket</h2>
+          <textarea class="textarea" rows="10" placeholder="Logs"></textarea>
+          <div class="box-buttons">
+            <button class="btn">Connect</button>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script src="./app.js"></script>
