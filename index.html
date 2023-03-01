@@ -12,24 +12,47 @@
       <div class="container">
         <div class="box socket-control" data-route="messages">
           <h2>Message Socket</h2>
-          <textarea class="textarea" rows="10" placeholder="Logs"></textarea>
-          <input class="input" type="text" placeholder="Message" />
+          <textarea
+            class="textarea"
+            rows="10"
+            placeholder="Log"
+            id="message-logs"
+          ></textarea>
+          <input
+            class="input"
+            type="text"
+            placeholder="Username"
+            id="message-username"
+          />
+          <input
+            class="input"
+            type="text"
+            placeholder="Message"
+            id="message-text"
+          />
           <div class="box-buttons">
-            <button class="btn">Connect</button>
-            <button class="btn">Send</button>
+            <button class="btn" id="message-connection">Connect</button>
+            <button class="btn" id="message-send">Send</button>
           </div>
         </div>
 
         <div class="box socket-control" data-route="numbers">
           <h2>Numbers Socket</h2>
-          <textarea class="textarea" rows="10" placeholder="Logs"></textarea>
+          <textarea
+            class="textarea"
+            rows="10"
+            placeholder="Log"
+            id="numbers-log"
+          ></textarea>
           <div class="box-buttons">
-            <button class="btn">Connect</button>
+            <button class="btn" id="numbers-connection">Connect</button>
           </div>
         </div>
       </div>
     </main>
 
-    <script src="./app.js"></script>
+    <script src="./js/generateTimestamp.js"></script>
+    <script src="./js/messageSocketHandler.js"></script>
+    <script src="./js/numbersSocketHandler.js"></script>
   </body>
 </html>
